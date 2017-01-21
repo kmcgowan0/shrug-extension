@@ -1,8 +1,9 @@
-document.getElementById("copyLoremButton").addEventListener("click", function() {
-    copyToClipboard(document.getElementById("copyLoremTarget"));
-});
-document.getElementById("copyShrugButton").addEventListener("click", function() {
-    copyToClipboard(document.getElementById("copyShrugTarget"));
+$(document).ready(function(){
+  $(".shrug").click(function(){
+       
+    copyToClipboard(document.getElementById("shrug"));
+    
+  });
 });
 
 function copyToClipboard(elem) {

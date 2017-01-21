@@ -2,26 +2,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My Test Extension Options</title>
-		
+		<title>¯\_(ツ)_/¯</title>
 	</head>
 	<body>
 	<style type="text/css">
 		.hidden-value {display: none;}
 		input { width: 200px;}
 		button { margin: 1em 0.5em; }
+		.shrug { width: 80px; }
 
 	</style>
 
 
 <script src="jquery-3.1.1.min.js"></script>
 
-	<input type="text" id="copyLoremTarget" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris enim nulla, volutpat eget lectus eu, varius porttitor purus. Donec cursus odio quis convallis ultrices. Donec pellentesque sodales eros sit amet malesuada. Sed consequat, erat vitae blandit lacinia, ante ante porttitor mauris, et pretium neque orci sed eros."> <button id="copyLoremButton">Lorem</button><br><br>
-	<input type="text" id="copyShrugTarget" value="¯\_(ツ)_/¯"> <button onclick="insertText()" id="copyShrugButton">Shrug</button><br><br>
+	<img src="icon.png" class="shrug" type="button" value="PLAY" data-target="#shrug">
+	<div class="caption">Click to copy</div>
+	<div id="shrug" class="hidden-value">¯\_(ツ)_/¯</div>
 
-
-<script src="options.js"></script>
-<script src="pls.js"></script>
 	<script src="copy.js"></script>
 
 	</body>

@@ -1,10 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Test Extension",
+  "name": "Shrug Extension",
   "version": "0.1",
-  "options_page": "option.html",
   "content_scripts": [{
-     "js": ["copy.js", "options.js", "jquery-3.1.1.min.js", "content.js", "pls.js"],
+     "js": ["copy.js", "jquery-3.1.1.min.js"],
      "matches": ["http://*/*", "https://*/*"]
    }],
   "browser_action": {
