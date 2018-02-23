@@ -2,28 +2,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>¯\_(ツ)_/¯</title>
+		<script src="jquery-3.1.1.min.js"></script>
+<script src="copy.js"></script>
 	</head>
 	<body>
 	<style type="text/css">
 		.hidden-value {display: none;}
 		input { width: 200px;}
 		button { margin: 1em 0.5em; }
-		.shrug { width: 80px; }
+		.shrug { width: 80px; cursor: pointer;}
 
 	</style>
 
 
-<script src="jquery-3.1.1.min.js"></script>
 
-	<img src="icon.png" class="shrug" type="button" value="PLAY" data-target="#shrug">
+
+	<img src="icon.png" class="shrug" type="button" value="PLAY" data-target="#shrug" title="click to copy">
 	<div class="caption">Click to copy</div>
-	<div id="shrug" class="hidden-value">¯\_(ツ)_/¯</div>
+	<div id="shrug" class="hidden-value">¯\_(ツ)_/¯</div> 
 
-	<script src="copy.js"></script>
 
 	</body>
 </html>
-
-<!-- NEXT STEP -->
-<!-- access data from options page in popup -->

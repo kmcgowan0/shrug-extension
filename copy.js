@@ -1,10 +1,24 @@
-$(document).ready(function(){
-  $(".shrug").click(function(){
+jQuery(document).ready(function(){
+  jQuery(".shrug").click(function(){
        
     copyToClipboard(document.getElementById("shrug"));
     
   });
 });
+
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("shrug");
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("Copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
 
 function copyToClipboard(elem) {
       // create hidden text element, if it doesn't already exist
@@ -55,3 +69,14 @@ function copyToClipboard(elem) {
     }
     return succeed;
 }
+
+editor.addEventListener("paste", function(elem) {
+    // cancel paste
+    e.preventDefault();
+
+    // get text representation of clipboard
+    var text = e.clipboardData.getData("text/plain");
+
+    // insert text manually
+    document.execCommand("insertHTML", false, text);
+});
